@@ -5,10 +5,12 @@
 int historycounter=0;
 
 void Shell();
-void WriteHistoryCounter(int count);
-void ReadHistoryCounter();
 void ReadHistory();
 void WriteHistory(char *history);
+void WriteHistoryCounter(int count);
+void ReadHistoryCounter();
+void ClearHistory();
+
 
 void Shell()
 {
@@ -27,6 +29,12 @@ void Shell()
             WriteHistory("history");
             ReadHistory();
         }
+        else if(strcmp(command, "history -c\n")==0)
+        {
+            WriteHistory("exit");
+            ClearHistory();
+            historycounter=0;
+        }
         else if(strcmp(command, "exit\n")==0)
         {
             WriteHistory("exit");
@@ -36,10 +44,19 @@ void Shell()
         }
         else
         {
+            //WriteHistory(command);
             WriteHistory("unrecognized command");
             printf("Command is not recognized as an internal or external command, operable program or batch file.\n\n");
         }
     }
+}
+void ClearHistory()
+{
+    FILE *fileptr;
+    fileptr=fopen("HistoryCounter.txt","w");
+    fclose(fileptr);
+    fileptr=fopen("History.txt","w");
+    fclose(fileptr);
 }
 
 void WriteHistoryCounter(int count)
