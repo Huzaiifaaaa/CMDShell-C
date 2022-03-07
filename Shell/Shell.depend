@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1646636979 source:c:\users\huzai\documents\github\command-prompt-c-fiverr-13\shell\main.c
+	"sish.h"
+
+1646640978 c:\users\huzai\documents\github\command-prompt-c-fiverr-13\shell\sish.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include"sish.h"
 
 int main()
 {
-    printf("Hello world!\n");
+    Shell();
     return 0;
 }
