@@ -1,7 +1,7 @@
-#include"sish.h"
+#include"sish.h"        //including the header file, contains all the implemented functions
 
-int main()
+int main()//main function, execution starts here
 {
-    Shell();
-    return 0;
-}
+    Shell();//calling function
+    return 0;//returning
+}//end if function

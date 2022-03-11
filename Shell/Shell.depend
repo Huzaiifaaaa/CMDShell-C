@@ -1,9 +1,15 @@
 # depslib dependency file v1.0
-1646636979 source:c:\users\huzai\documents\github\command-prompt-c-fiverr-13\shell\main.c
+1647004996 source:c:\users\huzai\documents\github\command-prompt-c-fiverr-13\shell\main.c
 	"sish.h"
 
-1646676627 c:\users\huzai\documents\github\command-prompt-c-fiverr-13\shell\sish.h
+1647022192 c:\users\huzai\documents\github\command-prompt-c-fiverr-13\shell\sish.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	<malloc.h>
+	<unistd.h>
+	<dirent.h>
+	<process.h>
+	<wchar.h>
+	<sys/types.h>
 
